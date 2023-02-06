@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Ayumu Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    
+    <div class="video-container">
+        <video class="video-front-cam" src="./videos/ASample-VIDEO.mp4"></video>
+        <video class="video-back-cam" src="./videos/BSample-VIDEO.mp4"></video>
+
+        <div class="main-container">
+            <div class="top">
+                <div class="title">
+                    <p class="title-video-top">Playing now:</p>
+                    <p class="title-video">Fancy - TWICE</p>
+                </div>
+            </div>
+
+            <div class="center">
+                <span class="material-symbols-sharp">
+                    play_circle
+                    </span>
+            </div>
+
+            <div class="bottom">
+                <div class="additional-controls">
+                    <div class="mirror"><button>
+                        <span class="material-symbols-sharp">
+                            pixel_3_3xl_3a
+                            </span>
+                    </button>
+                    <p class="mirror-text">MIRROR (M)</p>
+                    <p class="mirror-text mirror-on-off">OFF</p>
+                    </div>
+
+                    <div class="looping"><button>
+                        <span class="material-symbols-sharp">
+                            cached
+                            </span>
+                    </button>
+                    <p class="loop-text">LOOPING (L)</p>
+                    <p class="loop-text loop-on-off">OFF</p>
+                    </div>
+
+                    <div class="speed"><button>
+                        <span class="material-symbols-sharp">
+                            speed
+                            </span>
+                    </button>
+                    <p class="speed-text">SPEED (S)</p>
+                    <p class="speed-text speed-amount">1X</p>
+                    </div>
+
+                    <div class="view"><button>
+                        <span class="material-symbols-sharp">
+                            camera_front
+                            </span>
+                    </button>
+                    <p class="view-text">VIEW (K)</p>
+                    <p class="view-text view-on-off">FRONT</p>
+                    </div>
+                </div>
+
+                <div class="container-for-background-color-controls">
+                    <div class="timeline">
+                        <div class="time">
+                            <span class="current-time">00:00</span>
+                            <span>/</span>
+                            <span class="duration-time">00:00</span>
+                        </div>
+
+                        <div class="progress">
+                            <input type="range" value="0">
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <div class="play-pause"><button>
+                            <span class="material-symbols-sharp">
+                                play_arrow
+                                </span>
+                        </button></div>
+
+                        <div class="volume">
+                            <button>
+                            <span class="material-symbols-sharp">volume_up</span>
+                            </button>
+                            
+                            <div class="volume-range">
+                                <input type="range" value="50" min="0" max="100">
+                            </div>
+                        </div>
+
+                        <div class="backward"><button>
+                            <span class="material-symbols-sharp">
+                                history
+                                </span>
+                        </button></div>
+
+                        <div class="forward"><button>
+                            <span class="material-symbols-sharp">
+                                update
+                                </span>
+                        </button></div>
+
+                        <div class="credit">
+                            <p>Created by Ayumu!</p>
+                        </div>
+
+                        <div class="fullscreen"><button>
+                            <span class="material-symbols-sharp">
+                                fullscreen
+                                </span>
+                        </button></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

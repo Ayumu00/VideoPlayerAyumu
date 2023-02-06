@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+
+/* This removes blue highlight when click */
+::selection {
+    color: none;
+    background: none;
+}
+
+/* For Mozilla Firefox */
+::-moz-selection {
+    color: none;
+    background: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+video {
+    margin-top: 0.5%;
+    width: 100%;
+    height: 100%;
+} 
+
+.main-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.additional-controls, .timeline, .controls {
+    display: flex;
+}
+
+.additional-controls {
+    gap: 45px
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.progress {
+    flex:1;
+}
+
+.progress input[type="range"] {
+    width: 100%;
+}
+
+.additional-controls {
+    justify-content: center;
+}
+
+button {
+    background: transparent;
+    border:0;
+    cursor: pointer;
+}
+
+input[type="range"], .center span{
+    cursor: pointer;
+}
+
+.controls span {
+    font-size: 30px;
+    color: white;
+}
+
+.additional-controls span {
+    font-size: 50px;
+    color: white;
+}
+
+.additional-controls p{
+    color:white;
+    font-size: 12px;
+}
+
+.additional-controls button {
+    margin-bottom: 10px;
+}
+
+.mirror, .looping, .speed, .view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time span {
+    color: white;
+    font-size: 15px;
+}
+
+.center span {
+    color: white;
+    font-size: 100px;
+}
+
+.time {
+    margin-right: 35px;
+}
+
+.title-video {
+    margin-top:8px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.title-video-top {
+    font-size: 18px;
+}
+
+.timeline, .title {
+    padding-left:24px;
+    padding-right:20px;
+}
+
+.controls {
+    gap: 6px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title {
+    color: white;
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+.container-for-background-color-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: rgba(0, 0, 0, 0.651);
+    box-shadow: 20px 20px 20px 20px black;
+}
+
+.video-back-cam{
+    visibility: hidden;
+    position: absolute;
+    left:0;
+}
+
+.mirrorTrans{
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /*Chrome Safari*/
+    -moz-transform:rotateY(180deg); /*Firefox*/
+}
+
+.volume {
+    display: flex;
+    flex: row;
+    align-items: center;
+}
+
+.volume-range>input[type="range"]{
+    width: 70px;
+}
+
+.volume-range {
+    position: absolute;
+    visibility: hidden;
+}
+
+.credit {
+    flex:1;
+    color: white;
+    font-size: 20px;
+    text-align: right;
+}
+
+.opacity-hide {
+    transition: opacity 2s;
+    opacity: 0;
+}
