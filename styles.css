@@ -41,10 +41,17 @@ body {
     align-items: center;
 }
 
-video {
+.video-front-cam, .video-back-cam {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} 
+
+.video-div{
+    position: relative;
     width: 95%;
     height: 98%;
-} 
+}
 
 .main-container {
     height: 100%;
