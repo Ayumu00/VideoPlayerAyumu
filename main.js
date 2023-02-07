@@ -191,9 +191,11 @@ function SpeedPlayBackFunction(){
 
 function fullscreenFunction(){
     if (fullScreenButtonText.innerText == "fullscreen"){
-        videoEntireContainer.requestFullscreen()
+        document.documentElement.requestFullscreen()
+        screen.orientation.lock("landscape")
         fullScreenButtonText.innerText="close_fullscreen"
     } else {
+        screen.orientation.unlock()
         document.exitFullscreen()
         fullScreenButtonText.innerText="fullscreen"
     }
